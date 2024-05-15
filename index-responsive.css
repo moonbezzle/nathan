@@ -1,0 +1,123 @@
+@media screen and (min-width: 360px) and (max-width: 768px){
+
+    .icons{
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+
+    .icons #close-icon{
+        display: none;
+    }
+
+    .topnavbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #121212;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.topnavbar{
+        height: 17.7rem;
+    }
+
+    .topnavbar a{
+        display: block;
+        font-size: 1.4rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    .topnavbar a.active{
+        color: rgba(250, 235, 215, 0.288);
+        border: none;
+    }
+
+    .topnavbar a:hover{
+        color: rgba(250, 235, 215, 0.288);
+        border: none;
+    }
+    .body
+    {
+        font-size: 1em;
+        flex-flow: row;
+        overflow-x: hidden;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 1px;
+        padding-bottom: 0%;
+        padding-top: 0%;
+    }
+
+    .banner{
+        width: 50svw;
+        height: 50vh;
+        padding-top: 80px;
+        background: none;
+    }
+
+    .banner .imgBanner{
+        display: flex;
+        width: 90vw;
+        height: 60vh;
+        box-sizing: border-box;
+    }
+
+    .banner .imgBanner img{
+        position: relative;
+        max-width: 90vw;
+        height: 40vh;
+        border-radius: 28px;
+        filter: grayscale(100);
+    }
+
+    .titleHeader{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 585px;
+        height: 50vh;
+        width: 60vw;
+        color: antiquewhite;
+        justify-content: left;
+        text-align: left;
+        font-family: "Inter", sans-serif;
+        background-color: none;
+        padding-right: 10px;
+    }
+
+    .titleHeader .name h2{
+        font-size: xx-large;
+        font-weight: 700;
+        line-height: 40px;
+        justify-content: right;
+        text-align: left;
+        letter-spacing: 2px;
+        padding-bottom: 15px;
+    }
+
+    .contact{
+        position: relative;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        top: 500px;
+    }
+
+}

@@ -1,0 +1,137 @@
+@media screen and (min-width: 360px) and (max-width: 768px){
+
+    .icons{
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+
+    .icons #close-icon{
+        display: none;
+    }
+
+    .topnavbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #121212;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    #check:checked~.topnavbar{
+        height: 17.7rem;
+    }
+
+    .topnavbar a{
+        display: block;
+        font-size: 1.4rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    .topnavbar a.active{
+        color: rgba(250, 235, 215, 0.288);
+        border: none;
+    }
+
+    .topnavbar a:hover{
+        color: rgba(250, 235, 215, 0.288);
+        border: none;
+    }
+
+    .photo{
+        top: 60px;
+        left: 20px;
+    }
+    .photo .nate-pic img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slideshow{
+        display: none;
+    }
+
+    .about-section .name{
+        top: 60px;
+        left: 20px;
+    }
+    .about-section{
+        font-size: 1.1rem;
+        display: grid;
+        grid-template-columns: auto;
+        top: 550px;
+        right: 90px;
+    }
+    .about-section .about p{
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 15px;
+        max-width: 150vw;
+    }
+
+    .more .more-facts{
+        left: 30px;
+        display: flex;
+        top: 1400px; 
+        
+    }
+
+    .more .more-facts h1{
+        font-size: 2rem;
+        left: 0;
+    }
+
+    .info{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        top: 1560px;
+        left: 10px;
+        max-width: 30vw;
+    }
+
+    .info .food{
+        font-size: 1.1rem;
+        
+    }
+
+    .hobbies{
+        left: 10px;
+        top: 1960px;
+        min-width: 90vw;
+    }
+
+    .likes-dislikes{
+        left: 10px;
+        top: 2460px;
+        display: grid;
+        grid-template-columns:auto;
+        grid-gap: 20px;
+        left: 40px;
+        min-width: 40px;
+    }
+
+    .likes-dislikes p{
+        min-width: 70vw;
+    }
+    .likes-dislikes ul li{
+        font-size: 1.1rem;
+        padding-right: 10px;
+    }
+
+
+    .likes-dislikes p{
+        font-size: 1.1rem;
+        bottom: 150px;
+    }
+}
