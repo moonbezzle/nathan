@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="about-responsive.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>about.</title>
+</head>
+<body>
+    
+    <header class="header">
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="topnavbar">
+            <!--nav bar-->
+                    <a  href="index.html">start.</a>
+                    <a class="active" href="about.html">about.</a>
+                    <a href="work.html">works.</a>
+                    <a href="handler.html">handler.</a>
+        </nav>
+    </header>
+    <!--end of navbar-->
+
+
+
+        <div class="photo">
+            <div class="nate-pic">
+            <img src="nathan pic.jpg">
+            </div>
+
+            
+        </div>
+
+        <div class="slideshow">
+            <img class="mySlides" src="slide1.jpg">
+            <img class="mySlides" src="slide2.jpg">
+            <img class="mySlides" src="slide3.jpg">
+            <img class="mySlides" src="slide4.jpg">
+        </div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+
+            </script>
+
+
+    <div class="about-section">
+
+            <div class="name">
+                <h1>NATHAN KENDRICK LOPEZ</h1>
+            </div>
+
+        <div class="profile-desc">
+            <div class="about">
+                <p>A fourth-year Computer Science student at MAPUA in Manila, Philippines. Born on July 17, 2003, 
+                    he currently lives alone in a dorm near his institution. He presently works part-time as a Web 
+                    Developer for his father's firm and streams games in his spare time.  </p>
+
+            </div>
+        </div>
+
+        <div class="profile-desc">
+            <div class="about">
+                <p>Nathan, an only child, was very close to both his father and his late mother. 
+                    Nathan has a shy disposition and is remarkably quiet. 
+                    He excels academically but prefers to keep a low profile in public. 
+                    He is a member of the Photography Club at his university.</p>
+                    <br>
+            </div>
+        </div>
+    </div>
+
+                    <div class="more">
+                        <div class="more-facts">
+                            <h1>More facts about Nathan.</h1>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="food">
+                            <h4>Favorite Foods</h4>
+                            <ul>
+                                <li>Eggs and Rice</li>
+                                <li>Pancake</li>
+                                <li>Hamburgers</li>
+                                <li>Cup Noodles</li>
+                            </ul>
+                        </div>
+
+
+                        <div class="food">
+                            <h4>Least Favorite Foods</h4>
+                            <ul>
+                                <li>Seafoods</li>
+                                <li>Too much vegetables</li>
+                                <li>Sweets</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="hobbies">
+                        <h4>Hobbies</h4>
+                        <p>He spends his leisure time streaming his favorite games, like Genshin Impact, LoL, Valorant, 
+                            Honkai Star Rail, and many others. He also watches cat videos when he wants to relax, the only catch is.. 
+                            Nathan is heavily allergic to cats.. 
+                            He also watched a lot of anime and read manga.</p>
+                    </div>
+
+                    <div class="likes-dislikes">
+                        
+
+                        <div class="read">
+                            <h4>Dislikes</h4>
+                            <ul>
+                                <li>Pushy people</li>
+                                <li>Loud noises</li>
+                                <li>Dusty sorroundings</li>
+                                <li>Cold places</li>
+                                <li>Small insects</li>
+                            </ul>
+
+                            <p> 
+                                Nathan also dislikes being told what to do, unless he asks for help. Who doesn't?</p>
+                        </div>
+                        <div class="read">
+                            <h4>Likes</h4>
+                                <ul>
+                                    <li>Photography</li>
+                                    <li>Novels</li>
+                                    <li>Anime</li>
+                                    <li>Cats</li>
+                                    <li> Gaming</li>
+                                    <li>Music</li>
+                                </ul>
+                                     <p>Nathan listens to Japanese songs often. </p>
+                        </div>
+
+                    </div>
+                    
+
+
+
+</body>
+</html>

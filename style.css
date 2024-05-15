@@ -1,0 +1,228 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212;
+}
+
+.body{
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    /*background: #121212;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 20px 30px rgba(3, 3, 3, 0.5);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+
+
+.topnavbar a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    font-family: "Inter", sans-serif;
+}
+
+.topnavbar a.active{
+    border-bottom: solid 2px antiquewhite;
+    color: antiquewhite;
+   
+}
+
+.topnavbar a:hover{
+    border-bottom: solid 2px rgba(250, 235, 215, 0.342);
+    color: antiquewhite;
+}
+
+#check{
+    display: none;
+}
+
+.icons{
+    position: absolute;
+    left: 5%;
+    font-size: 2.8rem;
+    color: antiquewhite;
+    cursor: pointer;
+    display: none;
+}
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 3px;
+    padding-top: 0%;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.banner .imgBanner{
+    position: relative;
+    gap: 10%;
+    box-sizing: border-box;
+}
+
+.banner .imgBanner img{
+    position: relative;
+    max-width: 400px;
+    height: 260px;
+    border-radius: 28px;
+    filter: grayscale(100);
+    transition: 0.5s;
+}
+
+.banner:hover .imgBanner img{
+    border-bottom: solid 4px rgba(255, 255, 255, 0.349);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 40px rgba(233, 233, 233, 0.418);
+    filter: none;
+    transform: translateX(-10px);
+}
+
+.titleHeader{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 585px;
+    top: 170px;
+    height: 90px;
+    width: 45%;
+    color: antiquewhite;
+    justify-content: right;
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    background-color: none;
+    border-right: solid 1px white;
+    padding-right: 70px;
+    
+}
+
+.titleHeader .name h2{
+    font-size: xx-large;
+    font-weight: 700;
+    line-height: 20px;
+    justify-content: right;
+    text-align: justify;
+    letter-spacing: 2px;
+    padding-bottom: 3%;
+}
+
+.titleHeader .prof {
+    list-style: none;
+    font-weight: 100px;
+    font-size: 20px;
+    justify-content: right;
+    text-align: justify;
+    margin: auto;
+}
+
+.titleHeader .description span{
+    font-weight: 100px;
+    font-size: 20px;
+    justify-content: right;
+    text-align: justify;
+    letter-spacing: 2;
+}
+
+.titleHeader .description span a{
+    text-decoration: underline;
+    color: antiquewhite;
+    font-style: italic;
+}
+
+.titleHeader .description span a:hover{
+    opacity: 0.3;
+    color: rgba(250, 235, 215, 0.568);
+}
+
+
+.social-container{
+
+    width: 100%;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.socialIcons a{
+    display: inline-block;
+    text-decoration: none;
+    padding:10px;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: rgb(73, 73, 73);
+    border-radius: 50%;
+    opacity: 0.9;
+
+}
+
+.socialIcons a:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.3s;
+}
+
+.contact{
+    top: 420px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    text-align: center;
+    justify-content: right;
+    align-items: right;
+    font-family: "Inter", sans-serif;
+    left: 965px;
+
+}
+
+.contact .starter h2{
+    position: relative;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
